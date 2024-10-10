@@ -37,7 +37,7 @@ app.use((err, req, res, next) => {
   res.status(500).json({ message: 'Something went wrong!' }); // Send a user-friendly error message
 });
 
-app.get ('/' , (req,res) => {
+app.post ('/' , (req,res) => {
   res.send('Hello, this is the backend server for an online auction application.')  // Replace with your own server message.
 })
 
