@@ -8,9 +8,14 @@ const connectDB = require('./utils/db');
 const cookieParser = require('cookie-parser');
 
 const app = express();
+// app.use(cors({
+//   credentials:true,
+//   origin:"http://localhost:3001"
+// }));
 app.use(cors({
-  credentials:true,
-  origin:"http://localhost:3001"
+  origin: [""],
+  methods: ["POST", "GET"],
+  credentials: true
 }));
 app.use(cookieParser()); // You can pass a secret for signing cookies
 app.use(express.json());
@@ -31,6 +36,10 @@ app.use((err, req, res, next) => {
   console.error(err.stack); // Log the error details
   res.status(500).json({ message: 'Something went wrong!' }); // Send a user-friendly error message
 });
+
+app.get ('/' , (req,res) => {
+  res.send('Hello, this is the backend server for an online auction application.')  // Replace with your own server message.
+})
 
 // Connect to the database and start the server
 connectDB().then(() => {
