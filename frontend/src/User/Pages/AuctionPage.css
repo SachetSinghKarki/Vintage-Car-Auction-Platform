@@ -1,0 +1,140 @@
+/* AuctionPage.css
+
+/* Overall Page Styling */
+/* body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  
+  /* Background Gradient for the Page */
+  /* .bg-gradient-to-r { bbvb
+    background: linear-gradient(135deg, #1f2937, #4b5563);
+  }
+   */
+  /* Container Styling */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  /* Product Image */
+  .vintage-filter {
+    filter: sepia(20%) contrast(90%) brightness(90%);
+    transition: filter 0.3s ease;
+  }
+  
+  .vintage-filter:hover {
+    filter: sepia(0%) contrast(100%) brightness(100%);
+  }
+  
+  /* Card Animation */
+  .motion-div {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .motion-div:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  
+  /* Timer Styling */
+  .timer {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f3f4f6;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeInOut 1s infinite;
+  }
+  
+  @keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  /* Button Styling */
+  .bg-blue-500 {
+    background-color: #3b82f6;
+  }
+  
+  .bg-blue-600 {
+    background-color: #2563eb;
+  }
+  
+  .bg-green-500 {
+    background-color: #10b981;
+  }
+  
+  .bg-green-600 {
+    background-color: #059669;
+  }
+  
+  .bg-red-500 {
+    background-color: #ef4444;
+  }
+  
+  .bg-red-600 {
+    background-color: #dc2626;
+  }
+  
+  .text-white {
+    color: #ffffff;
+  }
+  
+  .text-gray-600 {
+    color: #4b5563;
+  }
+  
+  /* Hover Effects */
+  .hover\:bg-blue-600:hover {
+    background-color: #2563eb;
+  }
+  
+  .hover\:bg-green-600:hover {
+    background-color: #059669;
+  }
+  
+  .hover\:bg-red-600:hover {
+    background-color: #dc2626;
+  }
+  
+  /* Card and Button Shadows */
+  .shadow-lg {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shadow-lg:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Loading Spinner */
+  .loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #3b82f6;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Bidding Closed Animation */
+  .bidding-closed {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ef4444;
+    animation: pulse 1s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+  }
+   
