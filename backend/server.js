@@ -92,9 +92,7 @@ app.get("/",(req,res)=>{
 // Connect to the database and export the app for Vercel
 connectDB().then(() => {
   console.log('Database connected');
-  app.listen(process.env.PORT, () => {
-    console.log(`Server running on port ${process.env.PORT}`);
-  }); // Start the server when the database connection is successful or fails. This ensures that the server starts only when the database is ready.  // Replace process.env.PORT with the actual port number you want to use.  // This is the recommended way to start the server in production.  // You can also use environment variables to store your
+   // Start the server when the database connection is successful or fails. This ensures that the server starts only when the database is ready.  // Replace process.env.PORT with the actual port number you want to use.  // This is the recommended way to start the server in production.  // You can also use environment variables to store your
 
 }).catch(err => {
   console.error('Database connection error:', err);
