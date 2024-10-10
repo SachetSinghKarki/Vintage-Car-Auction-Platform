@@ -84,7 +84,7 @@ app.use('/api/auth', authRoutes);
 //   console.error(err.stack); // Log the error details
 //   res.status(500).json({ message: 'Something went wrong!' }); // Send a user-friendly error message
 // });
-app.use('/favicon.png', express.static('path/to/favicon.png'));
+app.use('/favicon.png', express.static('./favicon.png'));
 app.get("/",(req,res)=>{
   res.send('Hello, this is the backend server for an online auction application.')  // Replace with your own server message.
 })
