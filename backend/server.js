@@ -27,9 +27,9 @@ app.use('/api/admin', adminRoutes);
 app.use('/api/auth',authRoutes); 
 
 // Middleware for handling 404 errors
-app.use((req, res, next) => {
-  res.status(404).json({ message: 'Not Found' });
-});
+// app.use((req, res, next) => {
+//   res.status(404).json({ message: 'Not Found' });
+// });
 
 // Error handling middleware
 app.use((err, req, res, next) => {
@@ -37,7 +37,7 @@ app.use((err, req, res, next) => {
   res.status(500).json({ message: 'Something went wrong!' }); // Send a user-friendly error message
 });
 
-app.post ('/' , (req,res) => {
+app.get ('/' , (req,res) => {
   res.send('Hello, this is the backend server for an online auction application.')  // Replace with your own server message.
 })
 
