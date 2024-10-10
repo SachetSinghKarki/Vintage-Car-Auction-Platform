@@ -60,7 +60,7 @@ const cookieParser = require('cookie-parser');
 const app = express();
 
 app.use(cors({
-  origin: [""], // Update this to the origin you want to allow
+  origin: [""], // Update this to the origin you want to allows
   methods: ["POST", "GET"],
   credentials: true
 }));
