@@ -79,11 +79,11 @@ app.use('/api/auth', authRoutes);
 //   res.status(404).json({ message: 'Not Found' });
 // });
 
-// Error handling middleware
-app.use((err, req, res, next) => {
-  console.error(err.stack); // Log the error details
-  res.status(500).json({ message: 'Something went wrong!' }); // Send a user-friendly error message
-});
+// // Error handling middleware
+// app.use((err, req, res, next) => {
+//   console.error(err.stack); // Log the error details
+//   res.status(500).json({ message: 'Something went wrong!' }); // Send a user-friendly error message
+// });
 
 app.get("/",(req,res)=>{
   res.send('Hello, this is the backend server for an online auction application.')  // Replace with your own server message.
